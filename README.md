@@ -67,7 +67,7 @@ Instalar o OpenStack "de verdade" (produção) é um processo complexo, geralmen
 
 ## 🏗️ Arquitetura do ambiente
 
-![Arquitetura CirrusCloud](./architecture.svg)
+![Arquitetura CirrusCloud](1787667273223_architecture.svg)
 
 <details>
 <summary>Versão em texto (ASCII)</summary>
