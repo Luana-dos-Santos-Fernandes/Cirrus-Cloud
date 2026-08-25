@@ -67,6 +67,11 @@ Instalar o OpenStack "de verdade" (produção) é um processo complexo, geralmen
 
 ## 🏗️ Arquitetura do ambiente
 
+![Arquitetura CirrusCloud](./architecture.svg)
+
+<details>
+<summary>Versão em texto (ASCII)</summary>
+
 ```
 ┌─────────────────────────────────────────────────────────┐
 │  Notebook físico (host)                                  │
@@ -94,6 +99,8 @@ Instalar o OpenStack "de verdade" (produção) é um processo complexo, geralmen
 ```
 
 **Em resumo:** o notebook roda uma VM (via Multipass) que hospeda o DevStack completo. Dentro dessa VM, o OpenStack pode criar *outras* VMs (as instâncias de verdade que você usa no dia a dia) usando virtualização aninhada (KVM). O painel Horizon é servido via Apache com HTTPS, e um túnel Cloudflare expõe isso à internet sem precisar abrir portas no roteador.
+
+</details>
 
 ---
 
